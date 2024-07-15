@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: ' 构建SDK通用模板',
   description: ' 构建SDK通用模板',
-  base: '/create-sdk-template/',
+  base: '/babel-plugin-changes-affected/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

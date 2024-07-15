@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: " 构建SDK通用模板"
-  text: " 构建SDK通用模板"
+  name: "标记变更影响的节点"
+  text: "标记变更影响的节点"
   tagline: My great project tagline
   actions:
     - theme: brand

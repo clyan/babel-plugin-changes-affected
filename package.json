@@ -1,9 +1,9 @@
 {
-  "name": "@clyan/create-sdk-template",
+  "name": "@clyan/babel-plugin-changes-affected",
   "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@9.5.0",
-  "description": "",
+  "description": "标记变更影响的节点",
   "author": "clyan",
   "license": "ISC",
   "keywords": [

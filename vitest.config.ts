@@ -5,6 +5,6 @@ export default defineConfig({
   test: {
     root: resolve(__dirname),
     globals: true,
-    include: ['**/__tests__/*.test.ts'],
+    include: ['**/*.test.ts'],
   },
 })

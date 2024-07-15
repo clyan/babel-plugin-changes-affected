@@ -1,0 +1,6 @@
+{
+  "extends": "@clyan/eslint-config-ts",
+  "rules": {
+    "eol-last": "off"
+  }
+}

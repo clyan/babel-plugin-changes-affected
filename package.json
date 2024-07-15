@@ -9,8 +9,35 @@
   "keywords": [
     "utils"
   ],
-  "main": "lib/index.js",
-  "module": "lib/esm/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./lib/index.cjs",
+        "types": "./lib/index.d.cts"
+      },
+      "import": {
+        "default": "./lib/index.js",
+        "types": "./lib/index.d.ts"
+      }
+    },
+    "./*": "./*"
+  },
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./lib/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "tsup src/index.ts --watch",
     "build": "tsup src/index.ts",
@@ -27,13 +54,21 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@babel/parser": "^7.24.8",
+    "@babel/traverse": "^7.24.8",
+    "@babel/types": "^7.24.9",
     "@clyan/eslint-config-ts": "^1.0.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/types": "^19.0.3",
     "@release-it/conventional-changelog": "^8.0.1",
+    "@swc/core": "^1.6.13",
+    "@types/babel__traverse": "^7.20.6",
+    "@types/debug": "^4.1.12",
     "@types/node": "^20.14.10",
     "@vitest/coverage-v8": "^2.0.2",
+    "debug": "^4.3.5",
+    "enhanced-resolve": "^5.17.0",
     "eslint": "^8.57.0",
     "lint-staged": "^15.2.7",
     "release-it": "^17.5.0",

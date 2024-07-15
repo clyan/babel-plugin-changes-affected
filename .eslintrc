@@ -1,6 +1,8 @@
 {
   "extends": "@clyan/eslint-config-ts",
   "rules": {
-    "eol-last": "off"
+    "eol-last": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/ban-ts-comment": "warn"
   }
 }

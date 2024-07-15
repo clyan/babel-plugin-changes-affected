@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
+    "target": "es2018",
+    "module": "esnext",
     "moduleResolution": "node",
     "lib": [
       "esnext"
@@ -10,23 +10,19 @@
       "node",
       "vitest/globals"
     ],
-    "removeComments": false,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "downlevelIteration": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmitOnError": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   },
   "exclude": [
     "**/node_modules/**",
     "**/lib/**",
-    "**/bin/**"
+    "**/bin/**",
+    "examples",
+    "playground"
   ]
 }

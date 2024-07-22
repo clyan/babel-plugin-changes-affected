@@ -118,8 +118,6 @@ export default function createRootRelationVisitors(
         newScope()
 
         if (p.isFunction()) {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-expect-error
           const refs = p.node.params.reduce((ret: Array<MemberRef>, param: LVal) => {
             return ret.concat(getPatternNames(param as LVal))
           }, [] as Array<MemberRef>)

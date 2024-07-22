@@ -10,6 +10,7 @@
       "node",
       "vitest/globals"
     ],
+    "baseUrl": ".",
     "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
